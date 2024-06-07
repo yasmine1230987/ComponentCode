@@ -1,0 +1,31 @@
+<!-- Front-end (HTML Templates) - where_clause.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Records</title>
+</head>
+<body>
+    <h1>Remove Part</h1>
+    <form action="/remove_part" method="POST">
+        <p> This page allows you to remove a part from the database by specifying what its code is, for example "CodeA", it's Material ID number, Batch ID number, 
+        and the amount of parts that where checked out that you specified with the above criteria</p>
+
+        <label for="to_change">Enter the Code name, ex "CodeB":</label>
+        <input type="text" id="to_change" name="to_change">
+        <br>
+
+        <label for="meterialID"> materialID:</label>
+        <input type="text" id="materialID" name="materialID">
+        <br>
+        <label for="batchID">batchID:</label>
+        <input type="text" id="batchID" name="batchID">
+        <br>
+        <label for="new_value">Parts Checked Out:</label>
+        <input type="text" id="new_value" name="new_value">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

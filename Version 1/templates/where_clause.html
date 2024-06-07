@@ -1,0 +1,30 @@
+<!-- Front-end (HTML Templates) - where_clause.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Clause</title>
+</head>
+<body>
+    <h1>Where Clause</h1>
+    <form action="/where_clause" method="POST">
+        <p> This function allows you to find where a certain Code/Material/Batch is within your data and gives you the information corresponding to that data</p>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <p> Insert The subject of what you're tryng to search, ie Material, Batch, CodeA,B,C,D</p>
+        <br>
+
+        <label for="comparison">comparison:</label>
+        <input type="text" id="comparison" name="comparison">
+        <p> For comparison, insert a term such as greater, equal, less, greater equal, less equal </p>
+        <br>
+        <label for="value">Value:</label>
+        <input type="text" id="value" name="value">
+        <p> Enter a numeric value for comparison </p>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

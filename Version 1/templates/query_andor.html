@@ -1,0 +1,52 @@
+<!-- Front-end (HTML Templates) - query_andor.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query the Database - AND/OR</title>
+</head>
+<body>
+    <h1>Query the Database - AND/OR</h1>
+    <form action="/query_andor" method="POST">
+        <p> Query and/or is used to sort the data simultaneously, one can find parts that are equal to a certain materialID but also have more than a certain type of code. You can sort based off material ID, batchID, or CodeA,B,C,D. You are also able to use AND as in both your conditions must be met, or OR where either of your conditions may be met. Subsequent data is outputted when submitted in the same format as "show table" with rowID as the first value </p>
+        <br>
+
+        <label for="column1">Column 1:</label>
+        <input type="text" id="column1" name="column1">
+        <p> For Column 1 insert the name of the first subject you'd like to sort by, for example "CodeB" </p>
+        <br>
+
+        <label for="operator1">Operator 1:</label>
+        <input type="text" id="operator1" name="operator1">
+        <p> For operator 1, insert a symbol like >, <, >=, <=, or = </p>
+        <br>
+
+        <label for="value1">Value 1:</label>
+        <input type="text" id="value1" name="value1">
+        <p> Enter a numeric value for comparison used with Column 1 and Operator 1 </p>
+        <br>
+
+        <label for="column2">Column 2:</label>
+        <input type="text" id="column2" name="column2">
+        <p> For Column 2 insert the name of the second subject you'd like to sort by, for example "Material" </p>
+        <br>
+
+
+        <label for="operator2">Operator 2:</label>
+        <input type="text" id="operator2" name="operator2">
+        <p> For operator 2, insert a symbol like >, <, >=, <=, or = </p>
+        <br>
+
+
+        <label for="value2">Value 2:</label>
+        <input type="text" id="value2" name="value2">
+        <p> Enter a numeric value for comparison used with Column 2 and Operator 2 </p>
+        <br>
+
+        <label for="logical_operator">Logical Operator (AND/OR):</label>
+        <input type="text" id="logical_operator" name="logical_operator">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

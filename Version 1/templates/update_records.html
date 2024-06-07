@@ -1,0 +1,33 @@
+<!-- Front-end (HTML Templates) - where_clause.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Records</title>
+</head>
+<body>
+    <h1>Update Records</h1>
+    <form action="/update_records" method="POST">
+    <p> This function allows you to update the information on a part based on its associated Material, Batch ID or Codes </p>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <p> What you would like to change (Material/Batch/CodeA,B,C,D) </p>
+        <br>
+
+        <label for="set_val"> Set Value:</label>
+        <input type="text" id="set_val" name="set_val">
+        <p> The value you'd like to change the subject to </p>
+        <br>
+        <label for="where">Reference:</label>
+        <input type="text" id="where" name="where">
+        <p> Input reference to what you would like to change, ex. Material would be the reference to changing how many CodeBs there are for that part</p>
+        <label for="what">Value:</label>
+        <input type="text" id="what" name="what">
+        <p> The value this reference is, for example the actual numeric MaterialID </p>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
